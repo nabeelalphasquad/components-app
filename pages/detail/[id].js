@@ -16,10 +16,9 @@ export default () => {
 
     let name = null
     if (obj1 || obj2) {
-        name = obj1.find(element => element.name === id)
-        name = obj2.find(element => element.name === id)
+        name = obj1.find(element => element.name === id) || obj2.find(element => element.name === id)
     }
-    
+
     return (
         <div>
             <Detail data={name && name} />
