@@ -1,3 +1,8 @@
-const withCSS = require('@zeit/next-css')
-
-module.exports = withCSS();
+module.exports = {
+  webpack: (config) => {
+    config.node = {
+      fs: 'empty'
+    }
+    return config
+  }
+};
