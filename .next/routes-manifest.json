@@ -1,0 +1,1 @@
+{"version":1,"pages404":true,"basePath":"","redirects":[],"rewrites":[],"headers":[],"dynamicRoutes":[{"page":"/detail/[id]","regex":"^\\/detail\\/([^/]+?)(?:\\/)?$","namedRegex":"^/detail/(?<id>[^/]+?)(?:/)?$","routeKeys":["id"]}]}
