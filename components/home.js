@@ -29,7 +29,7 @@ const Home = () => {
         </div>
         <hr></hr>
         <div className="flex margin-top">
-          <h1>Application UI</h1>
+          <h1>Application-UI</h1>
           <ul style={{ marginLeft: "100px" }}>
             {
               obj2 && obj2.map((item, index) => {
