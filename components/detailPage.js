@@ -11,8 +11,9 @@ export default (props) => {
                     <ul>
                         {
                             data.children.map((item, index) => {
+                                let path = item.path.replace("../dh-components-source" , "https://a.tuk.dev" )
                                 return (
-                                    <li key={index}> {item.name} ({item.path})</li>
+                                    <li key={index} className="m-5"> <a className="hover:no-underline hover:text-black outline-none" href ={path}> {path} </a> </li>
                                 )
                             })
                         }
@@ -20,21 +21,6 @@ export default (props) => {
                 </div>
             }
 
-            <style jsx>{`
-        ul{
-          padding: 0px;
-        }
-        li{
-          list-style-type: none;
-          margin-bottom: 20px;
-          margin:30px;
-        }
-        a{
-          text-decoration: none;
-          color: black;
-        }
-        
-      `}</style>
         </div>
     )
 }
