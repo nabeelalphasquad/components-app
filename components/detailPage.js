@@ -1,19 +1,35 @@
-import React from 'react';
-import data from "../response.json"
+import React, { useState, useEffect } from 'react';
+import axios from "axios"
 
 export default (props) => {
 
     let { data } = props
+
+    const [main, setMain] = useState(null)
+    useEffect(() => {
+        let copyData = data && { ...data }
+        copyData && copyData.children.forEach(sin => {
+            let path = sin.path.replace("../dh-components-source", "https://a.tuk.dev")
+            axios.get(path).then(res => {
+                sin.htmlData = res.data
+            })
+        setMain(copyData)
+
+        })
+    }, [data])
+    // console.log(main)
     return (
         <div>
             {
-                data && <div>
+                main && <div>
                     <ul>
                         {
-                            data.children.map((item, index) => {
-                                let path = item.path.replace("../dh-components-source" , "https://a.tuk.dev" )
+                            main.children.map((item, index) => {
+                                console.log(item.htmlData)
                                 return (
-                                    <li key={index} className="m-5"> <a className="hover:no-underline hover:text-black outline-none" href ={path}> {path} </a> </li>
+                                    <li key={index} className="m-5"> 
+                                        <div dangerouslySetInnerHTML={{ __html: item.name }}></div>
+                                    </li>
                                 )
                             })
                         }

@@ -10,38 +10,38 @@ const Home = () => {
 
   return (
     <div>
-      <nav class="bg-white shadow">
-        <div class="container mx-auto px-6">
-          <div class="relative flex items-center justify-between">
-            <div class="inset-y-0 left-0 flex items-center xl:hidden">
-              <div class="cursor-pointer inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" class="visible xl:hidden icon icon-tabler icon-tabler-menu" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <nav className="bg-white shadow">
+        <div className="container mx-auto px-6">
+          <div className="relative flex items-center justify-between">
+            <div className="inset-y-0 left-0 flex items-center xl:hidden">
+              <div className="cursor-pointer inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" className="visible xl:hidden icon icon-tabler icon-tabler-menu" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"></path>
                   <line x1="4" y1="8" x2="20" y2="8"></line>
                   <line x1="4" y1="16" x2="20" y2="16"></line>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" className="hidden h-6 w-6" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" />
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
             </div>
-            <div class="w-2/5 hidden md:flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div class="">
-                <div class="hidden xl:flex">
-                  <a href="#" class="py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">Dashboard</a>
-                  <a href="#" class="ml-10 items-center flex py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">
+            <div className="w-2/5 hidden md:flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="">
+                <div className="hidden xl:flex">
+                  <a href="#" className="py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">Dashboard</a>
+                  <a href="#" className="ml-10 items-center flex py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">
                     Products
-                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 text-gray-600 icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-gray-600 icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z"></path>
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                   </a>
-                  <a href="#" class="mx-10 py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">Performance</a>
-                  <a href="#" class="items-center flex py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">
+                  <a href="#" className="mx-10 py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">Performance</a>
+                  <a href="#" className="items-center flex py-6 block text-sm leading-5 text-gray-700 hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition duration-150 ease-in-out">
                     Deliverables
-                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 text-gray-600 icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-gray-600 icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z"></path>
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
@@ -49,9 +49,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div class="hidden md:flex items-center pr-10 xl:pr-0">
-              <svg viewBox="0 0 132 130" fill="currentColor" class="h-12 w-12" version="1.1">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <div className="hidden md:flex items-center pr-10 xl:pr-0">
+              <svg viewBox="0 0 132 130" fill="currentColor" className="h-12 w-12" version="1.1">
+                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="Sign-In-1" transform="translate(-654.000000, -166.000000)">
                     <g id="Group-6" transform="translate(538.000000, 166.000000)">
                       <g id="Group-9" transform="translate(75.000000, 0.000000)">
@@ -85,29 +85,29 @@ const Home = () => {
                 </g>
               </svg>
             </div>
-            <div class="w-2/5 flex items-center justify-end">
-              <div class="cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l-2 border-gray-300 p-1 text-gray-600 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div className="w-2/5 flex items-center justify-end">
+              <div className="cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l-2 border-gray-300 p-1 text-gray-600 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"></path>
                   <circle cx="10" cy="10" r="7"></circle>
                   <line x1="21" y1="21" x2="15" y2="15"></line>
                 </svg>
               </div>
-              <div class="relative cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l-2 border-r-2 border-gray-300 p-1 text-gray-600 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <div className="relative cursor-pointer py-6 mr-0 px-4 sm:px-10 border-l-2 border-r-2 border-gray-300 p-1 text-gray-600 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bell" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z"></path>
                   <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
                   <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
                 </svg>
-                <div class="absolute top-0 right-0 mt-6 mr-4 sm:mr-10 pr-1 pt-1">
-                  <div class="w-2 h-2 rounded-full bg-red-400"></div>
+                <div className="absolute top-0 right-0 mt-6 mr-4 sm:mr-10 pr-1 pt-1">
+                  <div className="w-2 h-2 rounded-full bg-red-400"></div>
                 </div>
               </div>
-              <div class="ml-6 relative">
-                <div class="flex items-center">
-                  <div class="cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
-                    <img class="rounded" src="https://images.unsplash.com/photo-1586548634342-04801afc8b13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=36&q=80" alt="" data-pagespeed-url-hash="1510786993" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></div>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 text-gray-600 icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <div className="ml-6 relative">
+                <div className="flex items-center">
+                  <div className="cursor-pointer flex text-sm border-2 border-transparent rounded focus:outline-none focus:border-white transition duration-150 ease-in-out">
+                    <img className="rounded" src="https://images.unsplash.com/photo-1586548634342-04801afc8b13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=36&q=80" alt="" data-pagespeed-url-hash="1510786993" onLoad="pagespeed.CriticalImages.checkImageForCriticality(this);" /></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-gray-600 icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"></path>
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
