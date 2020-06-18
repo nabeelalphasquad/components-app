@@ -1,12 +1,17 @@
-import Link from 'next/link';
-import data from "../response.json"
-
+import React, { useState, useEffect } from 'react'
+import axios from "axios"
 
 const Home = () => {
-  let result
-  let i = 0
-  let obj1 = data.tree[0].children
-  let obj2 = data.tree[2].children
+
+  const [obj1, setObj1] = useState(null)
+  const [obj2, setObj2] = useState(null)
+
+  useEffect(() => {
+    axios.get("https://a.tuk.dev/ops/comTree").then(res => {
+      setObj1(res.data.tree[0].children)
+      setObj2(res.data.tree[2].children)
+    })
+  }, []);
 
   return (
     <div>
@@ -139,7 +144,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="container mx-auto">
           <div className="mt-10 mb-10 bg-white">
             <h1 className="text-3xl text-left p-10 ">Application UI</h1>
